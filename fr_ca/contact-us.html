@@ -669,7 +669,14 @@
         }
     </script>
 
-
+    <script src="../snowstorm.js"></script>
+    <!-- for the Snowstorm homepage, allow the demo to run on iPhone and mobile devices. -->
+    <script>snowStorm.excludeMobile = false;</script>
+    <script>
+        snowStorm.snowColor = '#99ccff';   // blue-ish snow!?
+        snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
+        snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+    </script>
 </head>
 <body class="page-template-default page page-id-113 wp-custom-logo translatepress-fr_CA elementor-default elementor-kit-16 elementor-page elementor-page-113">
 
@@ -927,12 +934,26 @@
                                                         <li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="fas fa-phone"></i>						</span>
-                                                            <span class="elementor-icon-list-text">(438) 380-8808</span>
+                                                            <span class="elementor-icon-list-text"> <a href="tel:+15144309282">(514) 430-9282</a>(Call or Text)</span>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="far fa-clock"></i>						</span>
-                                                            <span class="elementor-icon-list-text"><b>Heures d'ouverture</b><br>Lun: fermé<br>Mar, Mer, Jeu, Dim: 11h - 21h<br>Ven, Sam: 11h - 22h</span>
+                                                            <span class="elementor-icon-list-text"><b>Heures d'ouverture</b>
+                                                                <br>Lun: fermé
+                                                                <br>Mardi et mercredi : 11h - 15h et 16h - 20h
+                                                                <br>Jeudi et vendredi : 11h -15h et 16h -21h
+                                                                <br>Samedi et dimanche: 15h - 21h
+                                                            </span>
+                                                        </li>
+                                                        <li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="far fa-clock"></i>						</span>
+                                                            <span class="elementor-icon-list-text"><b>Nous offrons aussi</b>
+                                                                <br>Réservez Pour Vos Grandes Occasions
+                                                                <br>Événements de Groupe et Anniversaires
+                                                                <br>Mariages
+                                                            </span>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
@@ -969,95 +990,7 @@
                     </div>
                 </div>
             </section>
-            <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-d20c1dd elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="d20c1dd" data-element_type="section">
-                <div class="elementor-container elementor-column-gap-default">
-                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bc015b7 elementor-invisible"
-                         data-id="bc015b7" data-element_type="column"
-                         data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;,&quot;animation_delay&quot;:&quot;500&quot;}">
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="elementor-element elementor-element-d153c9a elementor-widget elementor-widget-heading"
-                                 data-id="d153c9a" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <h1 class="elementor-heading-title elementor-size-default">FORMULAIRE DE
-                                        RÉSERVATION</h1></div>
-                            </div>
-                            <div class="elementor-element elementor-element-2835421 elementor-widget elementor-widget-spacer"
-                                 data-id="2835421" data-element_type="widget" data-widget_type="spacer.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-spacer">
-                                        <div class="elementor-spacer-inner"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-0e3254c elementor-mobile-button-align-center envato-kit-61-form elementor-button-align-stretch elementor-widget elementor-widget-form"
-                                 data-id="0e3254c" data-element_type="widget"
-                                 data-settings="{&quot;button_width&quot;:&quot;100&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}"
-                                 data-widget_type="form.default">
-                                <div class="elementor-widget-container">
-                                    <form class="elementor-form" method="post" name="New Form" id="contact-form">
-                                        <input type="hidden" name="post_id" value="113"/>
-                                        <input type="hidden" name="form_id" value="0e3254c"/>
-                                        <input type="hidden" name="referer_title" value="Contactez Nous"/>
 
-                                        <input type="hidden" name="queried_id" value="113"/>
-
-                                        <div class="elementor-form-fields-wrapper elementor-labels-above">
-                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required">
-                                                <input size="1" type="text" name="form_fields[name]"
-                                                       id="huongxua-name"
-                                                       class="elementor-field elementor-size-lg  elementor-field-textual"
-                                                       placeholder="Votre Nom" required="required" aria-required="true">
-                                            </div>
-                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_727883c elementor-col-50 elementor-field-required">
-                                                <input size="1" type="text" name="form_fields[number_of_clients]"
-                                                       id="huongxua-number-of-clients"
-                                                       class="elementor-field elementor-size-lg  elementor-field-textual"
-                                                       placeholder="Nb de clients" required="required"
-                                                       aria-required="true">
-                                            </div>
-                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_71908d0 elementor-col-50 elementor-field-required">
-                                                <input size="1" type="email" name="form_fields[email]"
-                                                       id="huongxua-email"
-                                                       class="elementor-field elementor-size-lg  elementor-field-textual"
-                                                       placeholder="Courriel" required="required" aria-required="true">
-                                            </div>
-                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_e241c7b elementor-col-50 elementor-field-required">
-                                                <input size="1" type="text" name="form_fields[telephone]"
-                                                       id="huongxua-phone"
-                                                       class="elementor-field elementor-size-lg  elementor-field-textual"
-                                                       placeholder="Téléphone" required="required" aria-required="true">
-                                            </div>
-                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_1240d2c elementor-col-50 elementor-field-required">
-                                                <input size="1" type="text" name="form_fields[date]"
-                                                       id="huongxua-date"
-                                                       class="elementor-field elementor-size-lg  elementor-field-textual"
-                                                       placeholder="Date" required="required" aria-required="true">
-                                            </div>
-                                            <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-field-required">
-                                                <input size="1" type="text" name="form_fields[hour]"
-                                                       id="huongxua-hour"
-                                                       class="elementor-field elementor-size-lg  elementor-field-textual"
-                                                       placeholder="Heure" required="required" aria-required="true">
-                                            </div>
-                                            <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-                                                <button type="submit" class="elementor-button elementor-size-md">
-						<span>
-															<span class=" elementor-button-icon">
-																										</span>
-																						<span class="elementor-button-text">DEMANDER UNE RÉSERVATION</span>
-													</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
         <div class="post-tags">
         </div>
@@ -1156,7 +1089,7 @@
                         <div class="elementor-widget-container">
                             <h1 class="elementor-heading-title elementor-size-large">Appelez Nous <br>
 
-                                (438) 380-8808 <br></h1></div>
+                                (<a href="tel:+15144309282">(514) 430-9282</a> <br></h1></div>
                     </div>
                     <div class="elementor-element elementor-element-32caff0 elementor-widget elementor-widget-heading"
                          data-id="32caff0" data-element_type="widget" data-widget_type="heading.default">
@@ -1170,31 +1103,31 @@
     </section>
 </div>
 
-<template id="tp-language" data-tp-language="fr_CA"></template>
-<div id="trp-floater-ls" onclick="" data-no-translation
-     class="trp-language-switcher-container trp-floater-ls-names trp-bottom-left trp-color-dark flags-full-names">
-    <div id="trp-floater-ls-current-language" class="trp-with-flags">
+<!--<template id="tp-language" data-tp-language="fr_CA"></template>-->
+<!--<div id="trp-floater-ls" onclick="" data-no-translation-->
+<!--     class="trp-language-switcher-container trp-floater-ls-names trp-bottom-left trp-color-dark flags-full-names">-->
+<!--    <div id="trp-floater-ls-current-language" class="trp-with-flags">-->
 
-        <a href="#" class="trp-floater-ls-disabled-language trp-ls-disabled-language" onclick="event.preventDefault()">
-            <img class="trp-flag-image"
-                 src="../images/fr_CA.png"
-                 width="18" height="12" alt="fr_CA" title="Français du Canada">Français du Canada </a>
+<!--        <a href="#" class="trp-floater-ls-disabled-language trp-ls-disabled-language" onclick="event.preventDefault()">-->
+<!--            <img class="trp-flag-image"-->
+<!--                 src="../images/fr_CA.png"-->
+<!--                 width="18" height="12" alt="fr_CA" title="Français du Canada">Français du Canada </a>-->
 
-    </div>
-    <div id="trp-floater-ls-language-list" class="trp-with-flags">
+<!--    </div>-->
+<!--    <div id="trp-floater-ls-language-list" class="trp-with-flags">-->
 
-        <div class="trp-language-wrap" style="padding: 11px;"><a href="/en/contact-us"
-                                                                 title="English (Canada)">
-            <img class="trp-flag-image"
-                 src="../images/en_CA.png"
-                 width="18" height="12" alt="en_CA" title="English (Canada)">English (Canada) </a>
-            <a href="#" class="trp-floater-ls-disabled-language trp-ls-disabled-language"
-               onclick="event.preventDefault()"><img class="trp-flag-image"
-                                                     src="../images/fr_CA.png"
-                                                     width="18" height="12" alt="fr_CA" title="Français du Canada">Français
-                du Canada</a></div>
-    </div>
-</div>
+<!--        <div class="trp-language-wrap" style="padding: 11px;"><a href="/en/contact-us"-->
+<!--                                                                 title="English (Canada)">-->
+<!--            <img class="trp-flag-image"-->
+<!--                 src="../images/en_CA.png"-->
+<!--                 width="18" height="12" alt="en_CA" title="English (Canada)">English (Canada) </a>-->
+<!--            <a href="#" class="trp-floater-ls-disabled-language trp-ls-disabled-language"-->
+<!--               onclick="event.preventDefault()"><img class="trp-flag-image"-->
+<!--                                                     src="../images/fr_CA.png"-->
+<!--                                                     width="18" height="12" alt="fr_CA" title="Français du Canada">Français-->
+<!--                du Canada</a></div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <link rel='stylesheet' id='e-animations-css'
       href='../css/elementor/assets/lib/animations/animations.min.css'
