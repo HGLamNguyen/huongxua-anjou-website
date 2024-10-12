@@ -680,6 +680,20 @@
                          data-id="5709e11" data-element_type="widget" id="up"
                          data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;},&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}"
                          data-widget_type="nav-menu.default">
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                var menuToggle = document.querySelector('#mobile-menu-toggle');
+                                if (menuToggle) {
+                                    menuToggle.addEventListener('click', function () {
+                                        var isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                                        menuToggle.setAttribute('aria-expanded', !isExpanded);
+                                        var menu = document.querySelector("#mobile-menu");
+                                        menu.style.display = isExpanded ? 'none' : 'block';
+                                    });
+                                }
+                            });
+                        </script>
+
                         <div class="elementor-widget-container">
                             <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-text e--animation-grow">
                                 <ul id="menu-1-5709e11" class="elementor-nav-menu">
@@ -695,14 +709,57 @@
                                 </ul>
                             </nav>
                             <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle"
-                                 aria-expanded="false">
+                                 aria-expanded="false" id="mobile-menu-toggle">
                                 <i aria-hidden="true" role="presentation"
                                    class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true"
                                                                                                    role="presentation"
                                                                                                    class="elementor-menu-toggle__icon--close eicon-close"></i>
                                 <span class="elementor-screen-only">Menu</span>
                             </div>
-                            <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+                            <style>
+                                .mobile-container {
+                                    color: white;
+                                    border-radius: 10px;
+                                }
+
+                                .topnav {
+                                    overflow: hidden;
+                                    background-color: #333;
+                                    position: relative;
+                                }
+
+                                .topnav #myLinks {
+                                    display: none;
+                                }
+
+                                .topnav a {
+                                    color: white;
+                                    padding: 14px 16px;
+                                    text-decoration: none;
+                                    font-size: 17px;
+                                    display: block;
+                                }
+
+                                .topnav a.icon {
+                                    background: black;
+                                    display: block;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+
+                                .topnav a:hover {
+                                    background-color: #ddd;
+                                    color: black;
+                                }
+
+                                .active {
+                                    background-color: #04AA6D;
+                                    color: white;
+                                }
+                            </style>
+<!--                            Menu desktop-->
+                            <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" id="mobile-menu" style="display:none; margin-top: 50px">
                                 <ul id="menu-2-5709e11" class="elementor-nav-menu">
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-63">
                                         <a href="/" aria-current="page"
@@ -719,6 +776,8 @@
                                 </ul>
                             </nav>
                         </div>
+
+
                     </div>
                 </div>
             </div>
